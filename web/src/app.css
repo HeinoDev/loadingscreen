@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("./assets/fonts/hanken-grotesk-latin.woff2") format("woff2");
+}
+
+:root {
+  --bg: #0a0a0b;
+  --ink: #ededed;
+  --dim: #8a8a8f;
+  --line: rgba(255, 255, 255, 0.08);
+  --accent: #3b6cff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

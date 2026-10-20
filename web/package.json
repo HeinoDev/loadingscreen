@@ -1,0 +1,14 @@
+{
+  "name": "heino-loadingscreen",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.js",
+    "dev": "bun run dev.js"
+  },
+  "devDependencies": {
+    "bun-plugin-svelte": "^0.0.6",
+    "svelte": "^5.57.2"
+  }
+}
