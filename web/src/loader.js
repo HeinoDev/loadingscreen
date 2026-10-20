@@ -3,6 +3,7 @@ import { writable, get } from 'svelte/store';
 const config = window.LOADINGSCREEN_CONFIG || {};
 export const serverName = config.serverName || 'serveren';
 export const brand = config.brand === 'name' ? 'name' : 'logo';
+export const keybind = config.keybind !== false;
 const connecting = `Forbinder til ${serverName}…`;
 
 export const status = writable('Initialiserer…');
@@ -30,6 +31,7 @@ function showJoin() {
   joinReady.set(true);
   setReal(1);
   setText('Klar til at joine.');
+  if (!keybind) join();
 }
 
 function join() {

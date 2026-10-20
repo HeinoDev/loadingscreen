@@ -1,9 +1,9 @@
 <script>
-  import { status, joinReady, joining } from './loader.js';
+  import { status, joinReady, joining, keybind } from './loader.js';
 </script>
 
 <div class="status" class:faded={$joining}>
-  {#if $joinReady}
+  {#if $joinReady && keybind}
     <p>Tryk <kbd>ENTER</kbd> for at joine byen</p>
   {:else}
     <p>{$status}</p>
