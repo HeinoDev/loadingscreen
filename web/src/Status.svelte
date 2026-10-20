@@ -13,17 +13,16 @@
 <style>
   .status {
     font-size: 15px;
+    line-height: 1.8;
     color: var(--dim);
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 70vw;
     transition: opacity 200ms ease;
   }
 
   .status :global(kbd) {
     margin: 0 4px;
-    padding: 2px 7px;
+    padding: 3px 8px;
+    line-height: 1.4;
     border: 1px solid var(--dim);
     border-radius: 2px;
     color: var(--ink);
