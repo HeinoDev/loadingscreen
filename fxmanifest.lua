@@ -4,14 +4,14 @@ lua54 'yes'
 
 author 'Heino'
 
-loadscreen 'web/dist/index.html'
+loadscreen 'web/build/index.html'
 loadscreen_manual_shutdown 'yes'
 loadscreen_cursor 'no'
 
 client_script 'client.lua'
 
 files {
-    'web/dist/**/*',
+    'web/build/**/*',
 }
 
 exports { 'HasJoined' }
